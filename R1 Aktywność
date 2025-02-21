@@ -1,0 +1,23 @@
+# 2. Stwórz funkcję, która będzie tworzyć wektor o zadanej długości.
+# Funkcja ma zwracać wektor liczb całkowitych od 1 do n:
+#  długość wektora wynosi n, a wartości w wektorze to sekwencja liczb od 1 do n.
+stworzwektor = function(n){
+  if (n<=0){
+    return("Dlugosc wektora nie moze byc ujemna")
+  }
+  else {wektor <- 1:n
+  return(wektor)
+  }
+}
+stworzwektor(12)
+stworzwektor(-2)
+# 4. Stwórz funkcję, która oblicza długość przeciwprostokątnej w trójkącie prostokątnym.
+przeciwprostokatna = function(dlugoscA, dlugoscB){
+  if(dlugoscA > 0 && dlugoscB>0){
+    dlugoscC = sqrt(dlugoscA^2 + dlugoscB^2)
+    return(dlugoscC)
+  }
+  else return("Dlugosci bokow musza byc wieksze od zera")
+}
+przeciwprostokatna(2,3)
+przeciwprostokatna(-1,5)
